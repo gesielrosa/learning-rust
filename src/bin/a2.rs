@@ -8,4 +8,16 @@
 // * Use a function to display the result
 // * Use the "{:?}" token in the println macro to display the result
 
-fn main() {}
+fn sum(a: i32, b: i32) -> i32 {
+    a + b
+}
+
+fn display_result(value: i32) {
+    println!("The result is {:?}", value)
+}
+
+fn main() {
+    let a = 50;
+    let b = 60;
+    display_result(sum(a, b))
+}
