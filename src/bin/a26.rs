@@ -8,4 +8,11 @@
 // * (OPTIONAL) Read the documentation section `Formatting and Parsing`
 //   for examples on how to create custom time formats
 
-fn main() {}
+use chrono::DateTime;
+use chrono::Utc;
+
+
+fn main() {
+    let date = Utc::now();
+    println!("{}", date.format("%d/%m/%Y %H:%M:%S"));
+}
